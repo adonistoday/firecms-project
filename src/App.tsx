@@ -213,6 +213,20 @@ type Business = {
     password:string;
     phone_value:string;
     address_value:string;
+    monday_open:string;
+    monday_close:string;
+    tuesday_open:string;
+    tuesday_close:string;
+    wednesday_open:string;
+    wednesday_close:string;
+    thursday_open:string;
+    thursday_close:string;
+    friday_open:string;
+    friday_close:string;
+    saturday_open:string;
+    saturday_close:string;
+    sunday_open:string;
+    sunday_close:string;
     // related_products: EntityReference[];
     // main_image: string;
     // tags: string[];
@@ -277,7 +291,77 @@ const businessesCollection = buildCollection<Business>({
             name:"Phone Number",
             validation:{required:true},
             dataType:"string"
-        }
+        },
+        monday_open:{
+            name:"Monday Open Time",
+            validation:{required:true},
+            dataType:"string"
+        },
+        monday_close:{
+            name:"Monday Close Time",
+            validation:{required:true},
+            dataType:"string"
+        },
+        tuesday_open:{
+            name:"Tuesday Open Time",
+            validation:{required:true},
+            dataType:"string"
+        },
+        tuesday_close:{
+            name:"Tuesday Close Time",
+            validation:{required:true},
+            dataType:"string"
+        },
+        wednesday_open:{
+            name:"Wednesday Open Time",
+            validation:{required:true},
+            dataType:"string"
+        },
+        wednesday_close:{
+            name:"Wednesday Close Time",
+            validation:{required:true},
+            dataType:"string"
+        },
+        thursday_open:{
+            name:"Thursday Open Time",
+            validation:{required:true},
+            dataType:"string"
+        },
+        thursday_close:{
+            name:"Thursday Close Time",
+            validation:{required:true},
+            dataType:"string"
+        },
+        friday_open:{
+            name:"Friday Open Time",
+            validation:{required:true},
+            dataType:"string"
+        },
+        friday_close:{
+            name:"Friday Close Time",
+            validation:{required:true},
+            dataType:"string"
+        },
+        saturday_open:{
+            name:"Saturday Open Time",
+            validation:{required:true},
+            dataType:"string"
+        },
+        saturday_close:{
+            name:"Saturday Close Time",
+            validation:{required:true},
+            dataType:"string"
+        },
+        sunday_open:{
+            name:"Sunday Open Time",
+            validation:{required:true},
+            dataType:"string"
+        },
+        sunday_close:{
+            name:"Sunday Close Time",
+            validation:{required:true},
+            dataType:"string"
+        },
         // price: {
         //     name: "Price",
         //     validation: {
